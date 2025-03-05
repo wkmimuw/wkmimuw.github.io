@@ -1,5 +1,5 @@
 
-POSITIONS = 50
+POSITIONS = 2
 
 import requests
 from bs4 import BeautifulSoup
@@ -85,7 +85,9 @@ layout: default
     
     page.write(
 f'''
-```{pyfiglet.figlet_format(data["genre"])}```
+```
+{pyfiglet.figlet_format(data["genre"])}
+```
 **Wspaniały** wybór!
 
 Przykładowego utworu możesz posłuchać [tutaj]({data["preview_url"]})!
